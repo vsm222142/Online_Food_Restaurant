@@ -38,6 +38,14 @@
     display: flex;
     align-items: center;
 }
+
+.rotate-img{
+    transition: transform 3s ease-in;
+}
+.rotate-img:hover{
+    transform: rotate(150deg);
+}
+
 .main_slide div:nth-child(2){
     display: flex;
     flex: 1;
@@ -126,6 +134,10 @@
     font-size: 12px;
     margin-top: 15px;
     margin-bottom: 10px;
+}
+
+.fooding:hover{
+    transform: scale(1.1);
 }
 
 
