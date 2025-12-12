@@ -29,7 +29,7 @@
 
     .book {
       width: 40%;
-      height: auto;
+      height: 98vh;
       background-color: aliceblue;
       display: flex;
       justify-content: center;
@@ -97,7 +97,7 @@
 
       .book {
         width: 70%;
-        height: 70%;
+        height: 60%;
 
       }
 
@@ -123,6 +123,7 @@
     @media (max-width: 576px) {
       .book {
         width: 80%;
+        height: 85%;
         box-shadow: none;
         border-radius: 5px;
       }
@@ -211,6 +212,8 @@
         <input id="name" required type="text" name="text" placeholder="Full Name">
         <label for="name"> <b>Email</b></label>
         <input id="name" required type="email" name="email" placeholder="Email ">
+        <label for="name"><b>Mobile No. </b></label>
+        <input id="name" required type="tel" name="Mobile" placeholder="Mobile No. ">
         <label for="name"><b>Date</b></label>
         <input id="name" required type="date" name="date">
         <label for="name"><b>Time</b> </label>
@@ -220,7 +223,7 @@
         <div class="btn">
           <!-- <button class="bt2" type="submit">Book Now</button> -->
           <a href="index.html"><input type="submit" value="Book Now "> </a>
-          <a href="#"><input onclick="clsbookingtable()" type="button" value="Cancel "></a>
+          <a href="index.html"><input type="button" value="Cancel"></a>
 
 
         </div>
@@ -259,12 +262,7 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    function clsbookingtable() {
-      const booking = document.querySelector(".bookingcls");
-      booking.style = "display:none";
-    }
-  </script>
+
 </body>
 
 </html>
